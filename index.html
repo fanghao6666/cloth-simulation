@@ -2,6 +2,8 @@
 // Tihs is a simple cloth simulation Demo
 // @author: zutterhao
 // @date : 2019/4/26
+
+// @link : https://github.com/fanghao6666/cloth-simulation
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,6 +29,13 @@
 				text-align: center;
 			}
 
+      #help {
+        text-align: left;
+        width: 20%;
+        color:black;
+        font-size: 15px;
+      }
+
 			a {
 				text-decoration: underline;
 				cursor: pointer;
@@ -41,8 +50,35 @@
       <a onclick="sphere.visible = !sphere.visible;">Ball</a> |
       <a onclick="issimulate = !issimulate;">Simulate</a>|
       <a onclick="togglePins();">Pins</a>
-      
-		</div>
+
+      <div id="help">
+        <ul>
+          <li>Wind<ul>
+              <li>Click "Wind"  to enable and disalbe wind simulation</li>
+              <li>Use "Wind Direction" to change the direction of wind</li>
+            </ul>
+          </li>
+          <li>Ball<ul>
+              <li>Click "Ball" to add a ball to scene(collsion simulation)</li>
+              <li>Use "Ball Position" controls to change ball's position</li>
+            </ul>
+          </li>
+          <li>Simulate<ul>
+              <li>Click "Simulate" to enable and disable simulate</li>
+            </ul>
+          </li>
+          <li>Pins<ul>
+              <li>Select some points to hang the cloth</li>
+            </ul>
+          </li>
+          <li>Link<ul>
+              <a href="https://github.com/fanghao6666/cloth-simulation" target="_blank" rel="noopener">fanghao6666</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
 
 		<script src="js/three.js"></script>
 		<script src="js/WebGL.js"></script>
